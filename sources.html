@@ -1,41 +1,71 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="uk">
 	<head>
 		<title>VPN info</title>
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
 		<meta name="description" content="Різновиди, недоліки,переваги у безпеці та користуванні">
 		<meta name="keywords" content="vpn l2tp wireguard pptp типи обрати">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	</head>
-	<body bgcolor="#C5DEFF">
-		<table><tr><td align="center">
 
-		<table width="90%" cellspacing="0" cellpadding="5px">
-			<tr bgcolor="#97A8EE">
-				<td>
-					<a href="index.html"><img src="media/vpn-logo-blue-new.png"></a>
-				</td>
-				<td align="right" bordercolor="#97A8EE">
-					<a href="index.html"><img src=media/home-small.png alt="Головна"></a>
-					<a href="types.html"><img src="media/types-small.png" title="Типи VPN"></a>
-					<a href="choise.html"><img src="media/choise-small.png" title="Що вибрати?"></a>
-					<a href="map.html"><img src="media/map-small.png" title="Мапа сайту"></a>
-				</td>
-			</tr>
-			<tr bgcolor="#97A8EE">
-				<td align="center" colspan=2>
-					<h1>Джерела та посилання</h1>
-					<img src="media/vpn-banner-background.png" width="100%">
-				</td>
-			</tr>
-			<tr>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+		<link href="site.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<nav id="nav-main" class="navbar fixed-top navbar-expand-md navbar-dark" role="navigation">
+			<div class="container-fluid">
+				<a href="index.html" class="nav-item" style="padding: 5px;"><img src="media/vpn-logo-blue-new.png"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+					<ul class="navbar-nav px-3 text-end">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link"><span class="d-inline d-md-none me-3">Головна</span><img src=media/home-small.png alt="Головна"></a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="d-inline d-md-none me-3">Типи VPN</span><img src="media/types-small.png" title="Типи VPN"></a>
+							<ul class="dropdown-menu text-end text-md-start">
+						      <li><a class="dropdown-item" href="pptp-vpn.html">PPTP VPN</a></li>
+						      <li><a class="dropdown-item" href="l2tp-vpn.html">L2TP VPN</a></li>
+						      <li><a class="dropdown-item" href="wireguard-vpn.html">Wireguard®</a></li>
+						    </ul>
+						</li>
+						<li class="nav-item">
+							<a href="choise.html" class="nav-link"><span class="d-inline d-md-none me-3">Що вибрати?</span><img src="media/choise-small.png" title="Що вибрати?"></a>
+						</li>
+						<li class="nav-item">
+							<a href="map.html" class="nav-link"><span class="d-inline d-md-none me-3">Мапа сайту</span><img src="media/map-small.png" title="Мапа сайту"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<header class="container-fluid" id="header">
+			<div class="row pb-1 justify-content-center">
+				<div class="col gx-0">
+					<div class="card">
+						<img src="media/vpn-banner-background.png" width="100%" class="card-img rounded">
+						<div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+							<h1 class="text-center">МАПА САЙТУ</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="container">
+			<section class="col py-3">
 				<td colspan="2" align="center">
 					<p>Зображення, матеріали та будь-яка інша інформація, використана при створенні сайту - запозичена з відкритих джерел</p>
 					<p>Сайт створено виключно в навчальних, некомерційних цілях</p>
 					<p>Якщо Ви є правовласником та ваші права порушено - будь ласка, майте на увазі, що це сталося не навмисне та зв'яжіться зі мною за адресою: mike[dot]kondr[at]gmail.com</p>
 				</td>
-			</tr>
-			<tr bgcolor="#97A8EE">
+			</section>
+			<section class="col py-3">
 				<td colspan="2">
 					<ol>
 						<li>Основний банер: <a href="https://promwad.com/industries/telecom/vpn-solutions-development">https://promwad.com/industries/telecom/vpn-solutions-development</a></li>
@@ -52,16 +82,39 @@
 						</li>
 					</ol>
 				</td>
-			</tr>
-			<tr align="right">
-				<td colspan="2" bgcolor="#97A8EE">
-					Сайт створено в навчальних цілях<br>
-					<strong>Джерела зображень та матеріалів....</strong>
-				</td>
-			</tr>
+			</section>
+		</div>
 
-		</table>
+		<footer class="container-fluid rounded">
+			<div class="row py-4">
+				<div class="col text-start">
+					Сайт створено в навчальних цілях
+				</div>
+				<div class="col ms-auto me-auto text-center">
+					Дніпро, 2024
+				</div>
+				<div class="col text-end">
+					<a href="sources.html" class="link-info">Джерела зображень та матеріалів....</a>
+				</div>
+			</div>
+		</footer>
 
-		</td></tr></table>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>		
+		<script type="text/javascript" defer>
+			window.onload = function(){       
+			   document.onscroll = function() { 
+			      var scroll_start = window.scrollY;
+				  var startchange = document.getElementById('header');
+					var offset = 55;//startchange.offsetTop + startchange.clientHeight - 64;
+			      if(scroll_start > offset) {
+			          document.getElementById("nav-main").classList.add('scrolled');
+			       } else {
+			          document.getElementById("nav-main").classList.remove('scrolled');
+			       }
+			   };
+			    
+			};
+		</script>
+
 	</body>
 </html>

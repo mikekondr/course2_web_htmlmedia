@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<title>VPN info</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<meta name="description" content="Різновиди, недоліки,переваги у безпеці та користуванні">
+		<meta name="keywords" content="vpn l2tp wireguard pptp типи обрати">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+		<link href="site.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<nav id="nav-main" class="navbar fixed-top navbar-expand-md navbar-dark" role="navigation">
+			<div class="container-fluid">
+				<a href="index.html" class="nav-item" style="padding: 5px;"><img src="media/vpn-logo-blue-new.png"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+					<ul class="navbar-nav px-3 text-end">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link"><span class="d-inline d-md-none me-3">Головна</span><img src=media/home-small.png alt="Головна"></a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="d-inline d-md-none me-3">Типи VPN</span><img src="media/types-small.png" title="Типи VPN"></a>
+							<ul class="dropdown-menu text-end text-md-start">
+						      <li><a class="dropdown-item" href="pptp-vpn.html">PPTP VPN</a></li>
+						      <li><a class="dropdown-item" href="l2tp-vpn.html">L2TP VPN</a></li>
+						      <li><a class="dropdown-item" href="wireguard-vpn.html">Wireguard®</a></li>
+						    </ul>
+						</li>
+						<li class="nav-item">
+							<a href="choise.html" class="nav-link"><span class="d-inline d-md-none me-3">Що вибрати?</span><img src="media/choise-small.png" title="Що вибрати?"></a>
+						</li>
+						<li class="nav-item">
+							<a href="map.html" class="nav-link"><span class="d-inline d-md-none me-3">Мапа сайту</span><img src="media/map-small.png" title="Мапа сайту"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<header class="container-fluid" id="header">
+			<div class="row pb-1 justify-content-center">
+				<div class="col gx-0">
+					<div class="card">
+						<img src="media/vpn-banner-background.png" width="100%" class="card-img rounded">
+						<div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+							<h1 class="text-center">Wireguard®</h1>
+							<h2 class="text-center">fast, modern, secure VPN tunnel</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="container-fluid">
+			<section class="row py-3 align-items-center">
+				<div class="col-10 col-md-4 col-lg-3 offset-1 card">
+					<img src="media/wireguard.png" class="card-img mw-75">
+				</div>
+				<div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-7">
+					<p>WireGuard — це протокол зв’язку та безкоштовне програмне забезпечення з відкритим вихідним кодом, яке реалізує зашифровану віртуальну приватну мережу (VPN) і було розроблено з метою простоти використання, високої швидкості та низької поверхні атаки.[4]</p>
+					<p>Він націлений на кращу продуктивність і потужність, ніж IPsec і OpenVPN, два поширені протоколи тунелювання.[5] Протокол WireGuard передає трафік через UDP.[6]</p>
+					<p>У березні 2020 року вийшла стабільна версія для Linux і була включена в ядро Linux 5.6, а також була перенесена на попередні ядра Linux у деяких дистрибутивах. Компоненти ядра Linux ліцензовані відповідно до GNU General Public License (GPL) версії 2; інші реалізації знаходяться під GPLv2 або іншими безкоштовними/відкритими ліцензіями.</p>
+					<a href="https://uk.wikipedia.org/wiki/PPTP" target="_blank">Детальніше на Wikipedia</a>
+				</div>
+			</section>
+
+			<section class="row py-3">
+				<div class="col-10 offset-1">
+					<h3>WireGuard використовує наступне:[4]</h3>
+					<ul>
+						<li>X25519 для обміну ключами</li>
+						<li>ChaCha20 для симетричного шифрування</li>
+						<li>Poly1305 для кодів автентифікації повідомлень</li>
+						<li>SipHash для ключів хеш-таблиці</li>
+						<li>BLAKE2s для криптографічної хеш-функції</li>
+						<li>Тільки на основі UDP[6]</li>
+					</ul>
+					<p>У травні 2019 року дослідники з INRIA опублікували машинний аналіз протоколу WireGuard, створений за допомогою асистента CryptoVerif.[7]</p>
+					<br>
+					<h3>Додатковий режим попереднього спільного симетричного ключа</h3>
+					<p>WireGuard підтримує режим попередньо наданого симетричного ключа, який забезпечує додатковий рівень симетричного шифруваннядля пом’якшення майбутніх досягнень у квантових обчисленнях. Це усуває ризик того, що трафік може зберігатися, доки квантові комп’ютери не зможуть зламувати Curve25519, після чого трафік може бути розшифрований. Попередньо надані ключі «зазвичай викликають проблеми з точки зору керування ключами та, швидше за все, можуть бути вкрадені», але в короткостроковій перспективі, якщо симетричний ключ скомпрометовано, ключі Curve25519 все одно забезпечують більш ніж достатній захист.[8]</p>
+					<h3>Мережа</h3>
+					<p>WireGuard використовує лише[9] UDP[4] через потенційні недоліки TCP-over-TCP.[9] [10]</p>
+					<p>WireGuard повністю підтримує IPv6 як всередині, так і поза тунелем. Він підтримує лише рівень 3 для IPv4 і IPv6 та може інкапсулювати v4-в-v6 і навпаки.[11]</p>
+					<h3>Розширюваність</h3>
+					<p>WireGuard розроблено з можливістю розширення за допомогою сторонніх програм і скриптів. Це дозволило доповнити WireGuard різноманітними функціями, включаючи зручніші інтерфейси керування (в тому числі простіше налаштування ключів), ведення журналів, динамічне оновлення брандмауера та інтеграцію з LDAP.[джерело?]</p>
+					<p>Виключення таких складних функцій із мінімальної кодової бази ядра покращує його стабільність і безпеку. Для забезпечення безпеки WireGuard обмежує можливості реалізації криптографічного контролю, обмежує вибір процесів обміну ключами та відображає алгоритми [посилання на джерело] до невеликої підмножини сучасних криптографічних примітивів. Якщо в якомусь із примітивів знайдено вразливість, може бути випущена нова версія, яка вирішує проблему. Крім того, налаштування конфігурації, які впливають на безпеку програми в цілому, не можуть бути змінені непривілейованими користувачами.</p>
+				</div>
+			</section>
+
+		</div>
+
+		<footer class="container-fluid rounded">
+			<div class="row py-4">
+				<div class="col text-start">
+					Сайт створено в навчальних цілях
+				</div>
+				<div class="col ms-auto me-auto text-center">
+					Дніпро, 2024
+				</div>
+				<div class="col text-end">
+					<a href="sources.html" class="link-info">Джерела зображень та матеріалів....</a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>		
+		<script type="text/javascript" defer>
+			window.onload = function(){       
+			   document.onscroll = function() { 
+					var scroll_start = window.scrollY;
+					var startchange = document.getElementById('header');
+					var offset = 55;//startchange.offsetTop + startchange.clientHeight - 64;
+					if(scroll_start > offset) {
+			          	document.getElementById("nav-main").classList.add('scrolled');
+			       	} else {
+			        	document.getElementById("nav-main").classList.remove('scrolled');
+			    	}
+				};
+			};
+		</script>
+	</body>
+</html>

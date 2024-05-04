@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<title>VPN info</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<meta name="description" content="Різновиди, недоліки,переваги у безпеці та користуванні">
+		<meta name="keywords" content="vpn l2tp wireguard pptp типи обрати">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+		<link href="site.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<nav id="nav-main" class="navbar fixed-top navbar-expand-md navbar-dark" role="navigation">
+			<div class="container-fluid">
+				<a href="index.html" class="nav-item" style="padding: 5px;"><img src="media/vpn-logo-blue-new.png"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+					<ul class="navbar-nav px-3 text-end">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link"><span class="d-inline d-md-none me-3">Головна</span><img src=media/home-small.png alt="Головна"></a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="d-inline d-md-none me-3">Типи VPN</span><img src="media/types-small.png" title="Типи VPN"></a>
+							<ul class="dropdown-menu text-end text-md-start">
+						      <li><a class="dropdown-item" href="pptp-vpn.html">PPTP VPN</a></li>
+						      <li><a class="dropdown-item" href="l2tp-vpn.html">L2TP VPN</a></li>
+						      <li><a class="dropdown-item" href="wireguard-vpn.html">Wireguard®</a></li>
+						    </ul>
+						</li>
+						<li class="nav-item">
+							<a href="choise.html" class="nav-link"><span class="d-inline d-md-none me-3">Що вибрати?</span><img src="media/choise-small.png" title="Що вибрати?"></a>
+						</li>
+						<li class="nav-item">
+							<a href="map.html" class="nav-link"><span class="d-inline d-md-none me-3">Мапа сайту</span><img src="media/map-small.png" title="Мапа сайту"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<header class="container-fluid" id="header">
+			<div class="row pb-1 justify-content-center">
+				<div class="col gx-0">
+					<div class="card">
+						<img src="media/vpn-banner-background.png" width="100%" class="card-img rounded">
+						<div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+							<h1 class="text-center">PPTP VPN</h1>
+							<h2 class="text-center">Point-to-Point Tunneling Protocol</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="container-fluid">
+			<section class="row py-3 align-items-center">
+				<div class="col-10 col-md-4 col-lg-3 offset-1 card">
+					<img src="media/pptp.png" class="card-img mw-75">
+				</div>
+				<div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-7">
+					<p>PPTP (англ. Point-to-Point Tunneling Protocol) — тунельний <a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9_%D0%BF%D1%80%D0%BE%D1%82%D0%BE%D0%BA%D0%BE%D0%BB" target="_blank">протокол</a> типу <a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%B5%D1%80%D0%B5%D0%B6%D0%B0_%D1%82%D0%BE%D1%87%D0%BA%D0%B0-%D1%82%D0%BE%D1%87%D0%BA%D0%B0" target="_blank">точка-точка</a>, що дозволяє комп'ютеру встановлювати <a href="https://uk.wikipedia.org/wiki/VPN" target="_blank">захищене з'єднання</a> з сервером за рахунок створення спеціального тунелю в стандартній, незахищеній мережі.</p>
+					<p>PPTP поміщає (інкапсулює) кадри PPP в IP-пакети для передачі по глобальній IP-мережі, наприклад інтернет.</p>
+					<p>PPTP може також використовуватися для організації тунелю між двома <a href="https://uk.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0_%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B0" target="_blank">локальними мережами</a>. РРТР використовує додаткове TCP- з'єднання для обслуговування тунелю.</p>
+					<a href="https://uk.wikipedia.org/wiki/PPTP" target="_blank">Детальніше на Wikipedia</a>
+				</div>
+			</section>
+
+			<section class="row py-3">
+				<div class="col-10 offset-1">
+					<p>Протокол PPTP (Point-to-Point-Tunneling Protocol) розроблений компанією Microsoft спільно з компаніями Ascend Communications, 3Com/Primary Access, ECI-Telematics і US Robotics. Цей протокол був представлений в робочу групу «PPP Extentions» IETF як претендент на стандартний протокол створення захищеного каналу при доступі віддалених користувачів через публічні мережі (в першу чергу Internet) до корпоративних мереж. Спецификация протокола була опублікована RFC 2637 [Архівовано 4 травня 2011 у Wayback Machine.] в 1999 році. Вона не була ратифікована IETF. Протокол вважається менш захищеним, ніж IPSec. PPTP працює, встановлюючи звичайний PPP сеанс протилежною стороною за допомогою протоколу Generic Routing Encapsulation. Друге з'єднання на TCP-порту 1723 використовується для ініціювання та управління GRE-з'єднанням. PPTP складно перенаправляти за мережевий екран, оскльки він вимагає одночасного встановлення двох мережевих сеансів.</p>
+					<p>PPTP-трафік може бути зашифрованим за допомогою MPPE. Для аутентифікації клієнтів можуть використовуватися різноманітні механізми, найбезпечніші з них — MS-CHAPv2 и EAP-TLS.</p>
+					<p>Багатопротокольність — основна перевага інкапсулюючих протоколів канального рівня, до яких належить протокол PPTP.</p>
+					<p>PPTP працює шляхом інкапсуляції «рідних» пакетів локальної мережі — наприклад, пакетів IPX — всередину пакетів TCP / IP. Весь пакет IPX, включаючи його керуючу інформацію, стає корисним навантаженням для пакета TCP / IP, який потім можна передавати по Internet. Програмні засоби на іншому кінці лінії зв'язку витягують пакет IPX і направляють його для нормальної обробки згідно з його власним протоколом. Цей процес називається тунелюванням — ймовірно, тому, що створюється коридор в Internet, що з'єднує два вузли.</p>
+				</div>
+			</section>
+
+		</div>
+
+		<footer class="container-fluid rounded">
+			<div class="row py-4">
+				<div class="col text-start">
+					Сайт створено в навчальних цілях
+				</div>
+				<div class="col ms-auto me-auto text-center">
+					Дніпро, 2024
+				</div>
+				<div class="col text-end">
+					<a href="sources.html" class="link-info">Джерела зображень та матеріалів....</a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>		
+		<script type="text/javascript" defer>
+			window.onload = function(){       
+			   document.onscroll = function() { 
+					var scroll_start = window.scrollY;
+					var startchange = document.getElementById('header');
+					var offset = 55;//startchange.offsetTop + startchange.clientHeight - 64;
+					if(scroll_start > offset) {
+			          	document.getElementById("nav-main").classList.add('scrolled');
+			       	} else {
+			        	document.getElementById("nav-main").classList.remove('scrolled');
+			    	}
+				};
+			};
+		</script>
+	</body>
+</html>

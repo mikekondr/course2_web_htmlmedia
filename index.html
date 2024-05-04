@@ -1,57 +1,118 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="uk">
 	<head>
 		<title>VPN info</title>
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
 		<meta name="description" content="Різновиди, недоліки,переваги у безпеці та користуванні">
 		<meta name="keywords" content="vpn l2tp wireguard pptp типи обрати">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+		<link href="site.css" rel="stylesheet">
 	</head>
-	<body bgcolor="#C5DEFF">
-		<table><tr><td align="center">
+	<body>
 
-		<table width="90%" cellspacing="0" cellpadding="5px">
-			<tr bgcolor="#97A8EE">
-				<td width="33%">
-					<a href="index.html"><img src="media/vpn-logo-blue-new.png"></a>
-				</td>
-				<td width="33%"></td>
-				<td align="right" bordercolor="#97A8EE">
-					<img src=media/home-small.png alt="Головна">
-					<a href="types.html"><img src="media/types-small.png" title="Типи VPN"></a>
-					<a href="choise.html"><img src="media/choise-small.png" title="Що вибрати?"></a>
-					<a href="map.html"><img src="media/map-small.png" title="Мапа сайту"></a>
-				</td>
-			</tr>
-			<tr bgcolor="#97A8EE">
-				<td align="center" colspan=3>
-					<h1>СЕРВІСИ VPN</h1>
-					<h2>Різновиди, недоліки, переваги у безпеці та користуванні</h2>
-					<img src="media/vpn-banner-background.png" width="100%">
-				</td>
-			</tr>
-			<tr>
-				<td width="25%">
-					<dl>
-						<dt><a href="#what">Що таке VPN?</a></dt>
-						<dt><a href="#types">Різновиди VPN</a></dt>
-						<dd><a href="#type1">за принципом роботи</a></dd>
-						<dd><a href="#type2">за технічною реалізацією</a></dd>
-						<dd><a href="#type3">за протоколом роботи</a></dd>
-						<dd><a href="#type4">за пулом IP-адрес</a></dd>
-						<dd><a href="#type5">за доступністю</a></dd>
-						<dt><a href="#choise">Як вибрати сервіс VPN?</a></dt>
-					</dl>
-				</td>
-				<td align="center" type="none" colspan="2">
-					<h3 id="what">Що таке VPN?</h3>
+		<nav id="nav-main" class="navbar fixed-top navbar-expand-md navbar-dark" role="navigation">
+			<div class="container-fluid">
+				<a href="index.html" class="nav-item" style="padding: 5px;"><img src="media/vpn-logo-blue-new.png"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+					<ul class="navbar-nav px-3 text-end">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link"><span class="d-inline d-md-none me-3">Головна</span><img src=media/home-small.png alt="Головна"></a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="d-inline d-md-none me-3">Типи VPN</span><img src="media/types-small.png" title="Типи VPN"></a>
+							<ul class="dropdown-menu text-end text-md-start">
+						      <li><a class="dropdown-item" href="pptp-vpn.html">PPTP VPN</a></li>
+						      <li><a class="dropdown-item" href="l2tp-vpn.html">L2TP VPN</a></li>
+						      <li><a class="dropdown-item" href="wireguard-vpn.html">Wireguard®</a></li>
+						    </ul>
+						</li>
+						<li class="nav-item">
+							<a href="choise.html" class="nav-link"><span class="d-inline d-md-none me-3">Що вибрати?</span><img src="media/choise-small.png" title="Що вибрати?"></a>
+						</li>
+						<li class="nav-item">
+							<a href="map.html" class="nav-link"><span class="d-inline d-md-none me-3">Мапа сайту</span><img src="media/map-small.png" title="Мапа сайту"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<header class="container-fluid" id="header">
+			<div class="row pb-1 justify-content-center">
+				<div class="col gx-0">
+					<div class="card">
+						<img src="media/vpn-banner-background.png" width="100%" class="card-img rounded">
+						<div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+							<h1 class="text-center">СЕРВІСИ VPN</h1>
+							<h2 class="text-center">Різновиди, недоліки, переваги у безпеці та користуванні</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="container-fluid">
+			<section class="row py-3 align-items-center">
+				<div class="col-10 offset-1">
+					<div id="carousel" class="carousel slide" data-bs-ride="carousel">
+					  <div class="carousel-indicators">
+					    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					  </div>
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					      <img src="media/L2TP-VPN.png" class="d-block w-100" alt="...">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="media/PPTP-VPN.png" class="d-block w-100" alt="...">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="media/wireguard-vpn.png" class="d-block w-100" alt="...">
+					    </div>
+					  </div>
+					  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+				</div>
+			</section>
+
+			<section class="row py-3 align-items-center">
+				<div class="col-10 col-md-4 col-lg-3 offset-1">
+					<ul class="list-group list-group-flush">
+						<a href="#what" class="list-group-item list-group-item-action">Що таке VPN?</a>
+						<a href="#types" class="list-group-item list-group-item-action">Різновиди VPN</a>
+						<a href="#type1" class="list-group-item list-group-item-action">- за принципом роботи</a>
+						<a href="#type2" class="list-group-item list-group-item-action">- за технічною реалізацією</a>
+						<a href="#type3" class="list-group-item list-group-item-action">- за протоколом роботи</a>
+						<a href="#type4" class="list-group-item list-group-item-action">- за пулом IP-адрес</a>
+						<a href="#type5" class="list-group-item list-group-item-action">- за доступністю</a>
+						<a href="#choise" class="list-group-item list-group-item-action">Як вибрати сервіс VPN?</a>
+					</ul>
+				</div>
+				<div class="col-10 offset-1 offset-md-0 col-md-6 col-lg-7">
+					<h3 id="what" class="text-center">Що таке VPN?</h3>
 					<p>VPN (Virtual Private Network) – це віртуальна приватна мережа, яка забезпечує шифрування трафіку між клієнтом та VPN-сервером і зміну IP-адреси. При підключенні до VPN створюється захищений канал між комп'ютером користувача і VPN-сервером. Дані в ньому надійно зашифровані: ваш інтернет-провайдер не дізнається вашої локації та вебресурсів, які ви відвідали.</p>
-				</td>
-			</tr>
-			<tr bgcolor="#97A8EE">
-				<td colspan="3">
-					<h3 id="types">Різновиди VPN</h3>
-					VPN-клієнти різняться між собою за принципом роботи, тим, як вони реалізовані технічно, і за доступністю. Давайте розберемо ті з них, які зустрічаються найчастіше:<br>
+				</div>
+			</section>
+
+			<section class="row py-3">
+				<div class="col-10 offset-1">
+					<h3 id="types" class="text-center">Різновиди VPN</h3>
+					<p>VPN-клієнти різняться між собою за принципом роботи, тим, як вони реалізовані технічно, і за доступністю. Давайте розберемо ті з них, які зустрічаються найчастіше:</p>
 					<h4 id="type1">за принципом роботи</h4>
 					<p><strong>VPN з віддаленим доступом.</strong> Такі VPN надають користувачеві безпечний віддалений доступ до мережі. Часто таким сервісом користуються для безпечного доступу до корпоративної мережі з дому або інших місць.</p>
 					<p><strong>VPN типу "мережа-мережа"</strong> – для великого бізнесу. Складніший варіант VPN з віддаленим доступом. Він об'єднує кілька внутрішніх мереж в єдину мережу.</p>
@@ -66,49 +127,67 @@
 					Є ВПН, що надають тільки певний набір IP-адрес (статичні), і ті, в яких пул IP змінюється з певною періодичністю (динамічні). Також можливий змішаний тип сервісу, коли частина пулу IP змінюється, а частина залишається незмінною або можна, за окрему плату (або за певний період часу), змінювати частину IP
 					<h4 id="type5">за доступністю</h4>
 					Ввівши в пошуку запит "ВПН безкоштовно", ви отримаєте сотні пропозицій і виникає резонне питання: "а навіщо взагалі платити". Ми, частково, відповіли на нього раніше в статті. VPN досить ресурсозатратна в реалізації технологія, тож за її "безкоштовність" доведеться так чи інакше чимось пожертвувати - стабільністю, заспамленістю або рівнем безпеки
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<img src="media/how-to-choose.png" width="300px">
-				</td>
-				<td colspan="2">
-					<h3 id="choise">Як вибрати сервіс VPN?</h3>
-					Вибір ВПН залежить від такої кількості факторів, що окреслити все в межах однієї статті просто неможливо. Тому можна сформулювати кілька стереотипних сценаріїв, один із яких, найімовірніше, буде близьким до того, що потрібно вам:
+				</div>
+			</section>
+
+			<section class="row py-3 align-items-center">
+				<div class="d-none d-md-block col-md-3 offset-md-1">
+					<img src="media/how-to-choose.png" width="100%" class="rounded">
+				</div>
+				<div class="col-10 offset-1 offset-md-0 col-md-7">
+					<h3 id="choise" class="text-center">Як вибрати сервіс VPN?</h3>
+					<p>Вибір ВПН залежить від такої кількості факторів, що окреслити все в межах однієї статті просто неможливо. Тому можна сформулювати кілька стереотипних сценаріїв, один із яких, найімовірніше, буде близьким до того, що потрібно вам:</p>
 					<dl>
 						<dt>щоб обійти певні обмеження в одиничних випадках</dt>
 						<dt>для збору даних (парсингу)</dt>
 						<dt>для забезпечення анонімності та безпеки серфінгу на регулярній основі</dt>
 						<dt>для корпоративних цілей</dt>
 					</dl>
-					<a href="choise.html">Детальніше про вибір...</a>
-				</td>
-			</tr>
-			<tr bgcolor="#97A8EE">
-				<td colspan="3" align="center">
-					<iframe width="800" height="500" src="https://www.youtube.com/embed/ndXIpoYiKZQ" title="Що таке VPN? Як ним користуватися" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="3" align="center">
-					<audio src="media/deep-relaxation-meditation-nervous-system-healing-200224.mp3" controls autoplay loop>
+					<a href="choise.html" class="link-info">Детальніше про вибір...</a>
+				</div>
+			</section>
+
+			<section class="row py-3">
+				<div class="col-10 offset-1 d-flex justify-content-center">
+					<iframe width="800" height="500" src="https://www.youtube.com/embed/ndXIpoYiKZQ" title="Що таке VPN? Як ним користуватися" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="rounded"></iframe>
+				</div>
+				<div class="col-10 offset-1 mt-1 d-flex justify-content-center">
+					<audio src="media/deep-relaxation-meditation-nervous-system-healing-200224.mp3" controls loop>
 						<p>Якщо Ви це бачите - Ваш браузер не підтримує вбудоване в сторінку аудіо. А тут могла би бути спокійна фонова мелодія....</p>
 					</audio>
-				</td>
-			</tr>
-			<tr bgcolor="#97A8EE">
-				<td>
-					Сайт створено в навчальних цілях
-				</td>
-				<td align="center">
-					Дніпро, 2024
-				</td>
-				<td align="right">
-					<a href="sources.html">Джерела зображень та матеріалів....</a>
-				</td>
-			</tr>
-		</table>
+				</div>
+			</section>
 
-		</td></tr></table>
+		</div>
+
+		<footer class="container-fluid rounded">
+			<div class="row py-4">
+				<div class="col text-start">
+					Сайт створено в навчальних цілях
+				</div>
+				<div class="col ms-auto me-auto text-center">
+					Дніпро, 2024
+				</div>
+				<div class="col text-end">
+					<a href="sources.html" class="link-info">Джерела зображень та матеріалів....</a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>		
+		<script type="text/javascript" defer>
+			window.onload = function(){       
+			   document.onscroll = function() { 
+					var scroll_start = window.scrollY;
+					var startchange = document.getElementById('header');
+					var offset = 55;//startchange.offsetTop + startchange.clientHeight - 64;
+					if(scroll_start > offset) {
+			          	document.getElementById("nav-main").classList.add('scrolled');
+			       	} else {
+			        	document.getElementById("nav-main").classList.remove('scrolled');
+			    	}
+				};
+			};
+		</script>
 	</body>
 </html>
